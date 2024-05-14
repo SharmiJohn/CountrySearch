@@ -5,7 +5,7 @@ const Tile = ({ image, Alt, name }) => {
   return (
     <div className="countryCard" >
       <img style={{ width: "100%", height: "50%" }} src={image} alt={Alt} />
-      <h3>{name}</h3>
+      <h2>{name}</h2>
     </div>
   );
 }
