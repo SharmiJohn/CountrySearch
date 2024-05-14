@@ -1,29 +1,14 @@
 import { useEffect, useState } from "react";
-import style from "./App.css";
+import "./App.modules.css";
 import axios from "axios";
 const Tile = ({ image, Alt, name }) => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        flexDirection: "column",
-        width: "150px",
-        padding: "10px",
-        border: "1px solid rgb(87, 84, 84)",
-        borderRadius: "5px",
-
-        margin: "10px",
-        height: "150px",
-      }}
-    >
+    <div className="countryCard" >
       <img style={{ width: "100%", height: "50%" }} src={image} alt={Alt} />
       <h3>{name}</h3>
     </div>
   );
-};
-
+}
 function App() {
   const [data, setdata] = useState([]);
   const [value, setvalue] = useState("");
